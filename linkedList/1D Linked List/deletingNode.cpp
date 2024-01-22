@@ -22,7 +22,7 @@ void printingList(node *head)
 }
 void deleteNode(node* &head,int pos){
     node* current = head;
-    for(int i=0;i<pos-1;i++){
+    for(int i=1;i<pos-1;i++){
         current=current->next;
     }
     
@@ -43,7 +43,7 @@ int main()
     second->next = third;
     third->next = tail;
     printingList(head);
-    deleteNode(head,2); // position is the index of the list starting from the zero
+    deleteNode(head,2); // position is the index of the list starting from the 1
     printingList(head);
  return 0;
 }

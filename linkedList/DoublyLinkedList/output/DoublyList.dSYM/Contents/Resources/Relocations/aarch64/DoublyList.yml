@@ -1,0 +1,9 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/rithkchaudhary/Documents/StriverDsaSheet/linkedList/DoublyLinkedList/output/DoublyList'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003D20, symSize: 0x1B4 }
+  - { offsetInCU: 0x2C66, offset: 0x2C66, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003D20, symSize: 0x1B4 }
+  - { offsetInCU: 0x2D14, offset: 0x2D14, size: 0x8, addend: 0x0, symName: __ZN4nodeC1Ei, symObjAddr: 0x1B4, symBinAddr: 0x100003ED4, symSize: 0x34 }
+  - { offsetInCU: 0x2D4A, offset: 0x2D4A, size: 0x8, addend: 0x0, symName: __ZN4nodeC2Ei, symObjAddr: 0x1E8, symBinAddr: 0x100003F08, symSize: 0x28 }
+...
