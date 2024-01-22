@@ -2,7 +2,7 @@
 using namespace std;
 int twoSum(int arr[],int size,int target){
     for(int i=0;i<size-1;i++){
-        for(int j=0;j<size;j++){
+        for(int j=i;j<size;j++){
             if((arr[i]+arr[j])==target){
                 cout<<"Yes"<<endl;
                 cout<<"The index is "<<i<<" "<<j<<endl;
