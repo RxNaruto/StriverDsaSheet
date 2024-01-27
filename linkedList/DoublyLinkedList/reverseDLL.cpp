@@ -22,19 +22,27 @@ void printingList(node *head)
     }
     cout<<"null"<<endl;
 }
-void reverseDLL(node* &head){
+node* reverseDLL(node* &head){
     node* current = head;
-    node* last=nullptr;
-    while(current!=nullptr){
-        last=current->next;
-        current->prev=current->next;
-        current->next=last;
-        current=current->prev;
-        
-    }
-    head=last->prev;
+    node* temp = nullptr;
+    
+    while(current != nullptr){
+        // Swap prev and next pointers
+        temp = current->prev;
+        current->prev = current->next;
+        current->next = temp;
 
+        current = current->prev;
+    }
+    
+    // Update head to point to the last node
+    if (temp != nullptr) {
+        head = temp->prev;
+    }
+
+    return head;
 }
+
 int main()
 {
     node *head = new node(1);
@@ -49,7 +57,7 @@ int main()
     third->prev = second;
     tail->prev = third;
     printingList(head);
-    reverseDLL(head);
+    head = reverseDLL(head);
     printingList(head);
 
 
