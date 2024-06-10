@@ -11,7 +11,10 @@ class node{
 };
 
 void setLinkedList(int l,int num){
-    
+    for(int i=0;i<l;i++){
+        node()
+    }
+
     
 }
 
