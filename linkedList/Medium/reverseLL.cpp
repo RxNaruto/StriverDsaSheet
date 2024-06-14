@@ -22,7 +22,7 @@ void printLL(Node* head){
     }
     cout<<"NULL"<<endl;
 }
-void reverseDLL(Node* head){
+void reverseLL(Node* head){
     Node* current = head;
     stack<int>st;
     while(current!=nullptr){
@@ -48,7 +48,7 @@ int main()
     n2->next=n3;
     n3->next=n4;
     printLL(n1);
-    reverseDLL(n1);
+    reverseLL(n1);
     printLL(n1);
    
  return 0;
