@@ -12,7 +12,7 @@ class Node{
     }
 };
 
-int middleOfLL(Node* head){
+Node* middleOfLL(Node* head){
     Node* slow =head;
     Node* fast = head;
     while( fast!=nullptr && fast->next!=nullptr){
@@ -22,10 +22,12 @@ int middleOfLL(Node* head){
            
       
     }
-     return slow->data;
+     return slow;
 }
 void deleteMiddleNode(Node* head){
-    
+    Node* temp = middleOfLL(head);
+    temp
+
 }
 int main()
 {
