@@ -1,7 +1,11 @@
 #include<iostream>
+#include<vector>
+#include<map>
 using namespace std;
-int longestSubArray(int arr[],int size){
-    
+int longestSubarrayz(vector<int>a, long long k){
+    map<long long, int > presum;
+
+
 }
 int main()
 {
