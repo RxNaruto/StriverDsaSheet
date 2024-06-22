@@ -22,7 +22,7 @@ int kadane(int arr[],int size){
     }
     cout<<"The index of maxsubarray is"<<endl;
     cout<<arrStart<<" "<<arrEnd<<" "<<endl;
-    cout<<"The max sum of subarray is "<<endl;
+    cout<<"The max sum of subarray is"<<endl;
     return max;
 }
 int main()
