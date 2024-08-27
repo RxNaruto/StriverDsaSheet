@@ -1,0 +1,9 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/rithkchaudhary/Documents/StriverDsaSheet/Binary Search/BsOnAns/output/nthRoot2'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: __Z4funciii, symObjAddr: 0x0, symBinAddr: 0x100003DA8, symSize: 0xB8 }
+  - { offsetInCU: 0x2DCB, offset: 0x2DCB, size: 0x8, addend: 0x0, symName: __Z4funciii, symObjAddr: 0x0, symBinAddr: 0x100003DA8, symSize: 0xB8 }
+  - { offsetInCU: 0x2E3D, offset: 0x2E3D, size: 0x8, addend: 0x0, symName: __Z7nthRootii, symObjAddr: 0xB8, symBinAddr: 0x100003E60, symSize: 0xE0 }
+  - { offsetInCU: 0x2EBD, offset: 0x2EBD, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x198, symBinAddr: 0x100003F40, symSize: 0x54 }
+...
