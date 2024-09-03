@@ -1,26 +1,21 @@
+#include <cmath>
 #include<iostream>
 #include<vector>
 using namespace std;
-bool smallestChecker(int sum,int i,int limit){
-    if((sum/i)>=limit){
-        return true;
-    }
-    return false;
-
-}
-int checkDivisor(vector<int>arr,int limit){
+int smallestDivisor(vector<int>arr,int target){
     int size = arr.size();
-    int sum = 0;
-    for(int i = 0;i<size;i++){
-        sum += arr[i];
-    }
-    for(int i=1;i<size;i++){
-        if(smallestChecker(sum,i,limit)){
-            return i;
+    int maxN = *max_element(arr.begin(),arr.end());
+    for(int d=1;d<=maxN;d++){
+        int sum = 0;
+        for(int i=0;i<size;i++){
+            sum += ceil((double)(arr[i]) / (double)(d));
         }
+        if(sum<=target){
+            return d;
+        }
+
     }
     return -1;
-
 }
 int main()
 {
@@ -30,7 +25,6 @@ int main()
     arr.push_back(3);
     arr.push_back(4);
     arr.push_back(5);
-    int limit =8;
-    cout<<checkDivisor(arr,limit);
+    cout<<smallestDivisor(arr,8);
  return 0;
 }
