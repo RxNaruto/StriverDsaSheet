@@ -1,14 +1,14 @@
 #include<iostream>
 using namespace std;
 int n=10;
-class queue{
+class Queue{
     int front;
     int back;
     int* arr;
 
     public:
     
-    queue(){
+    Queue(){
         front = -1;
         back = -1;
         arr = new int[n];
@@ -50,7 +50,7 @@ class queue{
 };
 int main()
 {
-    queue q1;
+    Queue q1;
     q1.push(1);
     q1.push(2);
     q1.push(3);

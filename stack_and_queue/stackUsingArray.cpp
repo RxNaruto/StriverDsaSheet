@@ -1,13 +1,13 @@
 #include<iostream>
 using namespace std;
 int n=10;
-class stack{
+class Stack{
     int top;
     int* arr;
     
 
     public:
-    stack(){
+    Stack(){
         arr = new int[n];
         top=-1;
     }
@@ -51,7 +51,7 @@ class stack{
 };
 int main()
 {
-    stack st;
+    Stack st;
     st.push(1);
     st.push(2);
     st.push(3);
