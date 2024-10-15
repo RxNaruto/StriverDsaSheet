@@ -13,14 +13,14 @@ class Node{
 };
 Node* reverseDLL(Node* head){
     Node* current = head;
-    Node* last = NULL;
+    Node* temp = NULL;
     while(current!=nullptr){
-       last = current->prev;
+       temp = current->prev;
         current->prev=current->next;
-        current->next= last;
+        current->next= temp;
         current=current->prev;
     }
-    Node* newHead = last->prev;
+    Node* newHead = temp->prev;
     return newHead;
     
 }
