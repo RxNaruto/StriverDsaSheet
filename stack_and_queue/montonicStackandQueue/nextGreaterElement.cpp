@@ -22,6 +22,7 @@ vector<int>nextGreater(vector<int>arr){
                 ans.push_back(-1);
                 st.push(arr[i]);
             }
+        }
     }
     
 }
