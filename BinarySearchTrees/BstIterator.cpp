@@ -48,6 +48,7 @@ int main()
 
     BstIterator sol(root);
     cout<<sol.next()<<endl;
+    cout<<sol.hasNext();
 
 
  return 0;
