@@ -60,7 +60,7 @@ int main()
         {1, 0}, {0, 2},
         {2, 1}, {0, 3},
         {3, 4}
-    };
+    };  
     vector<int> adj[n];
     for (int i = 0; i < n; i++) {
         adj[edges[i][0]].push_back(edges[i][1]);
