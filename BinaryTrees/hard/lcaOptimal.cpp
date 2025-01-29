@@ -19,8 +19,8 @@ Node* lca(Node* root,Node* p,Node* q){
     Node* left = lca(root->left,p,q);
     Node* right = lca(root->right,p,q);
     
-    if(left==NULL)return right;
-    else if(right==NULL)return left;
+    if(left==NULL)return right; 
+    else if(right==NULL)return left; 
     else return root;
 }
 int main()

@@ -16,7 +16,9 @@ struct Node{
 };
 vector<vector<int>>verticalOrder(Node* root){
     queue<pair<Node*,pair<int,int>>>todo;
+    //{node,vertical,horizontal}
     map<int,map<int,multiset<int>>>nodes;
+    //{vertical,horizontal,node}
 
     todo.push({root,{0,0}});
     while(!todo.empty()){

@@ -8,6 +8,7 @@ class Solution{
         int n=grid.size();
         int m = grid[0].size();
         queue<pair<pair<int,int>,int>>q;
+        //{{x,y},steps}
         vector<vector<int>>vis(n,vector<int>(m,0));
         vector<vector<int>>dis(n,vector<int>(m,0));
         for(int i=0;i<n;i++){

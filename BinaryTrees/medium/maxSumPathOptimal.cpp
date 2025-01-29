@@ -13,10 +13,10 @@ struct Node{
 };
 int maxSumPath(Node* root,int& maxS){
     if(root==NULL)return 0;
-    int leftSum=maxSumPath(root->left,maxS);
-    int rightSum=maxSumPath(root->right,maxS);
-    maxS= max(root->data+leftSum+rightSum,maxS);
-    return (root->data)+max(leftSum,rightSum);
+    int lsum = max(0,maxSumPath(root->left, maxS));
+    int rsum = max(0,maxSumPath(root->right, maxS));
+    maxS = max(maxS, root->data+lsum+rsum);
+    return max(lsum,rsum)+root->data;
 
 }
 int maxSum(Node* root){
