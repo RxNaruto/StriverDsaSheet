@@ -65,11 +65,18 @@ class Solution{
             int nodeRow = it[0];
             int nodeCol = it[1] + maxRow+1;
             ds.unionBySize(nodeRow, nodeCol);
-            
+            stoneNodes[nodeRow]=1;
+            stoneNodes[nodeCol]=1;
+        }
+        int cnt =0;
+        for(auto it: stoneNodes){
+            if(ds.findUPar(it.first)==it.first){
+                cnt++;
+            }
         }
 
     }
-}
+};
 int main()
 {
  return 0;
