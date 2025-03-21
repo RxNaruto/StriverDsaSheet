@@ -5,6 +5,8 @@
         "vector": "cpp",
         "stack": "cpp",
         "queue": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "complex": "cpp",
+        "valarray": "cpp"
     }
 }
