@@ -10,8 +10,6 @@ int longestSubstring(string s){
             length = j-i+1;
             maxLen = max(length,maxLen);
             hash[s[j]]=1;
-
-
         }
     }
     return maxLen;
